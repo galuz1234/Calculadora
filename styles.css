@@ -1,0 +1,33 @@
+.Calculadora{
+    width: 400px;
+    height: 400px;
+    background-color: cornflowerblue;
+    padding: 30px;
+    border-radius: 15px;
+    justify-content:space-between;
+  /* profe no me dejo centrar la calculadora en el centro de la pagina,  */
+    
+    
+}
+
+.valor{
+    text-align: right;
+}
+
+.titulo {
+    font-size: 20px;
+}
+
+.table{
+    height: 330px;
+}
+
+button {
+    width: 100%;
+    font-size: 150%;
+  }
+
+  .C{
+    color: darkred;
+  }
+

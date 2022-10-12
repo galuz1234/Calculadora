@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.2.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>Calculadora</title>
+
+
+</head>
+<body >
+    <script src="main.js"></script>
+
+    <div class="Calculadora" > <!-- se crea un div para guardar dentro la tabla de la calculadora -->
+
+        <table class="table table-striped table-bordered text-center" > <!-- se crea una tabla para crear las divisiones del teclado de la calculadora -->
+            
+            <div> <!-- titulo de la calculadora, que abarca todas las columnas, concatenandolas -->
+                <tr class="titulo">
+                    <td colspan="4">
+                        <p class="font-italic">CALCULADORA BÁSICA</p> <!-- profe porque no toma la clase del titulo? -->
+                    </td>
+                </tr>
+            </div>
+
+            <tr class= "valor"> <!-- En esta fila se va a dejar el input para recibir los datos y mostrar el resultado -->
+                <td colspan="4">
+                    <input class="text input" type="text" id="IngresaDato" value="0" placeholder="0" >
+                </td>
+            </tr>
+       
+            <tr> <!-- En las siguientes filas se va a programar cada uno de los numeros del teclado de la calculadora -->
+                <td>
+                    <button class = "btn-calc" id ="nro7">
+                        7
+                    </button>
+                </td>
+                <td>
+                    <button class = "btn-calc" id ="nro8">
+                        8
+                    </button>
+                </td>
+                <td>
+                    <button class = "btn-calc" id ="nro9">
+                        9
+                    </button>
+                </td>
+                <td>
+                    <button class = "btn-calc" id ="signo*">
+                        *
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class = "btn-calc" id ="nro4">
+                        4
+                    </button>
+                </td>
+                <td>
+                    <button class = "btn-calc" id ="nro5">
+                        5
+                    </button>
+                </td>
+                <td>
+                    <button class = "btn-calc" id ="nro6">
+                        6
+                    </button>
+                </td>
+                <td>
+                    <button class = "btn-calc" id ="signo-">
+                        -
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class = "btn-calc" id ="nro1">
+                        1
+                    </button>
+                </td>
+                <td>
+                    <button class = "btn-calc" id ="nro2">
+                        2
+                    </button>
+                </td>
+                <td>
+                    <button class = "btn-calc" id ="nro3">
+                        3
+                    </button>
+                </td>
+                <td>
+                    <button class = "btn-calc" id ="signo+">
+                        +
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="btn-calc" id="del" onclick="del()">
+                        C
+                    </button>
+                </td>
+                <td>
+                    <button class = "btn-calc" id ="nro0">
+                        0
+                    </button>
+                </td>
+                <td>
+                    <button class = "btn-calc" id ="signo,">
+                        ,
+                    </button>
+                </td>
+                <td>
+                    <button class = "btn-calc" id="res" onclick="calc()">
+                        =
+                    </button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    
+   <link rel="stylesheet" href="bootstrap-5.2.1-dist/js/bootstrap.min.js">
+
+</body>
+</html>
